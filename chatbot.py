@@ -8,4 +8,7 @@ while True:
         print("Goodbye!")
         break
 
-    print("Bot: I received your message.")
+    if user_input.lower() == "hello":
+        print("Bot: Hello! How can I help you?")
+    else:
+        print("Bot: I received your message.")
