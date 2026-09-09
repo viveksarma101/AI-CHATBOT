@@ -23,3 +23,9 @@ User -> Chatbot (Python Coded) -> Ollama -> Qwen 3:4B -> Response -> User
 
 # Stage 4 — Conversation Memory
 Added message history so previous user and assistant messages are sent to the model during the conversation.
+
+# Stage 5 — Adding System Instructions
+The chatbot was behaving too casually, sometimes making assumptions about the user and confidently presenting unknown information as fact.
+To address this, I added a `system` message with instructions for how the model should behave during the conversation.
+This was my first step toward controlling the chatbot's behavior through
+prompting rather than relying entirely on the model's default behavior.
