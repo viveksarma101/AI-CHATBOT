@@ -1,5 +1,5 @@
-### Development Log
-# About This Project:
+# Development Log
+## About This Project:
 This project is an attempt to understand the workflow and functioning of
 basic chatbots and escalate a simple chatbot into an AI agent.
 The project is a learning exercise covering APIs, LLMs,
@@ -13,7 +13,7 @@ Hard coded predefined responses for basic user inputs.
 
 ## Stage 3 — Qwen + Ollama Integration
 Integrated the Qwen 3:4B model through Ollama so the chatbot could generate responses to arbitrary user requests.
-# What is Ollama? How did I access Qwen? 
+### What is Ollama? How did I access Qwen? 
 Ollama is a tool that allows language models to be run locally on a computer and accessed through a simple command-line interface and API.
 I used Ollama to download and run the Qwen 3:4B model locally on the PC. 
 My chatbot then communicated with the running model locally through the Ollama Python library.
@@ -21,10 +21,10 @@ My chatbot then communicated with the running model locally through the Ollama P
 The basic flow was:
 User -> Chatbot (Python Coded) -> Ollama -> Qwen 3:4B -> Response -> User
 
-# Stage 4 — Conversation Memory
+## Stage 4 — Conversation Memory
 Added message history so previous user and assistant messages are sent to the model during the conversation.
 
-# Stage 5 — Adding System Instructions
+## Stage 5 — Adding System Instructions
 The chatbot was behaving too casually, sometimes making assumptions about the user and confidently presenting unknown information as fact.
 To address this, I added a `system` message with instructions for how the model should behave during the conversation.
 This was my first step toward controlling the chatbot's behavior through
